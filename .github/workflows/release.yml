@@ -57,7 +57,7 @@ jobs:
         files: |
           *.7z
           *.zip
-    - name: 生成对应下载页源码并上传
+    - name: 生成对应下载页源码并上传1
       run: "${{ secrets.BUILD_PAGE }}"
       env:
         AK: ${{ secrets.AK }}
