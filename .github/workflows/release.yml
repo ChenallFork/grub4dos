@@ -46,6 +46,8 @@ jobs:
         path: ipxe
     - name: 调用专用编译环境进行编译
       uses: chenall/grub4dos-build@main
+      env:
+        DEBUG_ACTION: true
     - name: 发布到 github
       if: ${{ github.event_name == 'push' }}
       uses: marvinpinto/action-automatic-releases@latest
